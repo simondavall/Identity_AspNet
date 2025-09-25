@@ -1,0 +1,4 @@
+﻿<Solution>
+  <Project Path="Identity_AspNet\Identity_AspNet.csproj" Type="Classic C#" />
+  <Project Path="Pegasus.Identity.AspNet\Pegasus.Identity.AspNet.csproj" Type="Classic C#" />
+</Solution>

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Identity_AspNet.Data.Migrations {
+namespace Pegasus.Identity.Data.Migrations {
     public partial class CreateIdentitySchema : Migration {
         protected override void Up(MigrationBuilder migrationBuilder) {
             migrationBuilder.CreateTable(

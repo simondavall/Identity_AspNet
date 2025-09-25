@@ -1,6 +1,8 @@
 using System.Diagnostics;
+using System.Net;
 using Microsoft.AspNetCore.Mvc;
 using Identity_AspNet.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Identity_AspNet.Controllers;
 
@@ -15,6 +17,16 @@ public class HomeController : Controller {
         return View();
     }
 
+    [Authorize(Roles = "PegasusUser")]
+    public IActionResult PegasusUser() {
+        return View();
+    }
+    
+    [Authorize(Roles = "Admin")]
+    public IActionResult Admin() {
+        return View();
+    }
+    
     public IActionResult Privacy() {
         return View();
     }
